@@ -1,0 +1,24 @@
+powershell
+-> cd C:\Users\USER\projects
+-> git clone <GITHUB URL>
+-> cd <project folder>
+-> cursor . (this runs cursor with the folder)
+
+If not cloning, can simply set up project in Cursor.
+
+Cursor
+-> uv --help
+-> uv init
+-> uv add langchain
+-> uv add langchain-openai
+-> uv add python-dotenv black isort
+
+Create a .gitignore file. Copy python basic gitignore file content from (https://github.com/github/gitignore/blob/main/Python.gitignore) into this file (this is to prevent things like API keys to be store on GitHub)
+
+Create a .env file and import your API keys (e.g. OPENAI_API_KEY=xxxxxxx)
+
+Once all set up, can commit and push
+
+git add . (this stages all files)
+git commit -m "Your commit message" 
+git push
